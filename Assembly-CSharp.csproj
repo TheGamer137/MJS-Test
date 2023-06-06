@@ -46,17 +46,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Views\OdometerView.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LTDescr.cs" />
      <Compile Include="Assets\Scripts\Services\Interfaces\IWebSocketService.cs" />
      <Compile Include="Assets\Scripts\Presenters\OdometerPresenter.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IVideoPlayerView.cs" />
      <Compile Include="Assets\Scripts\Installers\MenuInstaller.cs" />
-     <Compile Include="Assets\Scripts\Models\ClickSound.cs" />
      <Compile Include="Assets\Scripts\Installers\VideoPlayerInstaller.cs" />
-     <Compile Include="Assets\Scripts\Interfaces\IStatusResponse.cs" />
      <Compile Include="Assets\Scripts\Services\VlcVideoPlayer.cs" />
-     <Compile Include="Assets\Scripts\Models\Odometer.cs" />
      <Compile Include="Assets\Scripts\Services\WebSocketService.cs" />
      <Compile Include="Assets\Scripts\Installers\AudioInstaller.cs" />
      <Compile Include="Assets\Scripts\Views\MenuView.cs" />
@@ -64,44 +59,26 @@
      <Compile Include="Assets\Scripts\Views\AudioView.cs" />
      <Compile Include="Assets\Scripts\Services\Interfaces\IVideoPlayer.cs" />
      <Compile Include="Assets\Scripts\Presenters\MenuPresenter.cs" />
-     <Compile Include="Assets\Scripts\Presenters\AudioPresenter.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IOdometerView.cs" />
-     <Compile Include="Assets\Scripts\Interfaces\IOdometerResponse.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IAudioView.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
+     <Compile Include="Assets\Scripts\Models\Response.cs" />
      <Compile Include="Assets\Scripts\Views\VideoPlayerView.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
-     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
      <Compile Include="Assets\Scripts\Installers\OdometerInstaller.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IMenuView.cs" />
-     <Compile Include="Assets\Scripts\Models\MainMusic.cs" />
      <Compile Include="Assets\Scripts\Presenters\VideoPlayerPresenter.cs" />
      <Folder Include="Assets" />
-     <None Include="Assets\LeanTween\ReadMe.txt" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\Sprites" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Scenes" />
-     <Folder Include="Assets\LeanTween\Documentation\elements" />
-     <Folder Include="Assets\LeanTween\Framework" />
-     <None Include="Assets\LeanTween\License.txt" />
      <Folder Include="Assets\Scripts\Services\Interfaces" />
-     <Folder Include="Assets\LeanTween\Documentation\classes" />
-     <Folder Include="Assets\LeanTween\Documentation" />
      <Folder Include="Assets\Media\Effects" />
      <Folder Include="Assets\Scripts\Installers" />
      <Folder Include="Assets\Scripts\Models" />
      <Folder Include="Assets\Scripts\Views" />
-     <Folder Include="Assets\LeanTween\Documentation\assets" />
-     <Folder Include="Assets\Scripts\Presenters" />
      <Folder Include="Assets\Images" />
      <Folder Include="Assets\Media" />
      <Folder Include="Assets\Media\Music" />
-     <Folder Include="Assets\Scripts\Interfaces" />
-     <Folder Include="Assets\LeanTween" />
-     <Folder Include="Assets\LeanTween\Documentation\assets\css" />
      <Folder Include="Assets\Scripts\Services" />
      <Folder Include="Assets\Scripts\Views\Interfaces" />
      <Reference Include="UnityEngine">
@@ -349,9 +326,6 @@
      </Reference>
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
      <HintPath>C:\MyProjects\Unity\MJS-Test\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-     </Reference>
-     <Reference Include="websocket-sharp">
-     <HintPath>C:\MyProjects\Unity\MJS-Test\Assets\Plugins\websocket-sharp.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:\MyProjects\Unity\MJS-Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -856,6 +830,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{b5bcd66d-c256-e887-20e7-02b8f7535afb}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Zenject-Editor.csproj">
       <Project>{2a137199-c376-2b96-aa71-2d085caaa761}</Project>
       <Name>Zenject-Editor</Name>
@@ -864,9 +842,13 @@
       <Project>{71c8f29f-2d35-b9f1-ee77-9b4f234c2126}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
-    <ProjectReference Include="UniRx.csproj">
-      <Project>{b889eda2-5e38-b38c-5fef-ab7fa7755480}</Project>
-      <Name>UniRx</Name>
+    <ProjectReference Include="UnityWebSocket.Editor.csproj">
+      <Project>{b8932ebc-215a-7d1a-03c9-c4e9e8f026b5}</Project>
+      <Name>UnityWebSocket.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityWebSocket.Runtime.csproj">
+      <Project>{078c7f79-2d8e-8797-0c8b-a2985cda173c}</Project>
+      <Name>UnityWebSocket.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

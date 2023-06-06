@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=15df941a_002D3999_002D416e_002Daef0_002Df5c804b344f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebSocketOnOpen_Should_Get_Odometer_And_RandomStatus" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::6B498BAE-1664-D4E1-5D5B-EA422009FA1C::.NETFramework,Version=v4.7.1::Tests.Presenters.OdometerPresenterTests.WebSocketOnOpen_Should_Get_Odometer_And_RandomStatus&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a4153718_002D8a4b_002D4e55_002D8db5_002D018ab5acdcae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebSocketOnOpen_Should_Get_Odometer_And_RandomStatus #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::6B498BAE-1664-D4E1-5D5B-EA422009FA1C::.NETFramework,Version=v4.7.1::Tests.Presenters.OdometerPresenterTests.WebSocketOnOpen_Should_Get_Odometer_And_RandomStatus&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
