@@ -14,7 +14,6 @@ namespace Presenters
         private readonly WebSocket _webSocket;
         private readonly Timer _timer;
         private bool _serverIsActive;
-        private bool _gotCurrentOdometer;
         private string _value;
         
         public OdometerPresenter(IOdometerView view, IWebSocketService webSocketService)
@@ -49,7 +48,6 @@ namespace Presenters
         private void WebSocketOnMessage(object sender, MessageEventArgs e)
         {
             var response = JsonUtility.FromJson<Response>(e.Data);
-            Debug.Log(response.operation);
             if (!string.IsNullOrEmpty(response.odometer))
             {
                 _odometerView.OdometerNumber = response.odometer;
@@ -63,11 +61,6 @@ namespace Presenters
             if (!string.IsNullOrEmpty(response.status))
             {
                 _odometerView.IsRandom = bool.Parse(response.status);
-            }
-            
-            if (_gotCurrentOdometer)
-            {
-                SendRandomStatus();
             }
         }
 
@@ -85,13 +78,11 @@ namespace Presenters
         private void SendCurrentOdometer()
         {
             _webSocket.SendAsync("{\"operation\":\"getCurrentOdometer\"}");
-            _gotCurrentOdometer = true;
         }
 
         private void SendRandomStatus()
         {
             _webSocket.SendAsync("{\"operation\":\"getRandomStatus\"}");
-            _gotCurrentOdometer = false;
         }
     }
 }

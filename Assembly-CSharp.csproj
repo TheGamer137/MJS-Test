@@ -50,9 +50,7 @@
      <Compile Include="Assets\Scripts\Presenters\OdometerPresenter.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IVideoPlayerView.cs" />
      <Compile Include="Assets\Scripts\Installers\MenuInstaller.cs" />
-     <Compile Include="Assets\Scripts\Interfaces\IVideoPlayer.cs" />
      <Compile Include="Assets\Scripts\Installers\VideoPlayerInstaller.cs" />
-     <Compile Include="Assets\Scripts\Models\RemoteVideoPlayer.cs" />
      <Compile Include="Assets\Scripts\Services\WebSocketService.cs" />
      <Compile Include="Assets\Scripts\Installers\AudioInstaller.cs" />
      <Compile Include="Assets\Scripts\Views\MenuView.cs" />
@@ -61,11 +59,13 @@
      <Compile Include="Assets\Scripts\Presenters\MenuPresenter.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IOdometerView.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IAudioView.cs" />
+     <Compile Include="Assets\Scripts\Models\VideoPlayer.cs" />
      <Compile Include="Assets\Scripts\Models\Response.cs" />
      <Compile Include="Assets\Scripts\Views\VideoPlayerView.cs" />
      <Compile Include="Assets\Scripts\Installers\OdometerInstaller.cs" />
      <Compile Include="Assets\Scripts\Views\Interfaces\IMenuView.cs" />
      <Compile Include="Assets\Scripts\Presenters\VideoPlayerPresenter.cs" />
+     <Compile Include="Assets\Scripts\Models\Interfaces\IVideoPlayer.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Sprites" />
@@ -74,7 +74,7 @@
      <Folder Include="Assets\Scripts\Services\Interfaces" />
      <Folder Include="Assets\Media\Effects" />
      <Folder Include="Assets\Scripts\Installers" />
-     <Folder Include="Assets\Scripts\Interfaces" />
+     <Folder Include="Assets\Scripts\Models\Interfaces" />
      <Folder Include="Assets\Scripts\Models" />
      <Folder Include="Assets\Scripts\Views" />
      <Folder Include="Assets\Scripts\Presenters" />
